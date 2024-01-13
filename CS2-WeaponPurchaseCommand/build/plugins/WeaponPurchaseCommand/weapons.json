@@ -1,0 +1,29 @@
+{
+    "CooldownPurchase": 0,
+    "WeaponConfigs": {
+        "Glock": {
+            "PurchaseCommand": [ "css_glock", "css_gs" ],
+            "WeaponEntity": "weapon_glock",
+            "WeaponSlot": 1,
+            "PurchasePrice": 300,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "USP": {
+            "PurchaseCommand": [ "css_glock", "css_gs" ],
+            "WeaponEntity": "weapon_usp_silencer",
+            "WeaponSlot": 1,
+            "PurchasePrice": 450,
+            "PurchaseLimit": 4,
+            "PurchaseRestrict": false
+        },
+        "Deagle": {
+            "PurchaseCommand": [ "css_glock", "css_gs" ],
+            "WeaponEntity": "weapon_deagle",
+            "WeaponSlot": 1,
+            "PurchasePrice": 700,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": true
+        }
+    }
+}

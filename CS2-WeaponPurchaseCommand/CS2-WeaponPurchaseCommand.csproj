@@ -5,7 +5,14 @@
     <RootNamespace>WeaponPurchaseCommand</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="CounterStrikeSharp.API">
