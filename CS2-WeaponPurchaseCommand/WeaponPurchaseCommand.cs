@@ -71,10 +71,9 @@ namespace WeaponPurchaseCommand
         {
             var client = @event.Userid;
 
-            if (PlayerBuyList[client.Slot].PlayerBuyHistory == null)
-                PlayerBuyList[client.Slot].PlayerBuyHistory = new();
+            if (PlayerBuyList.ContainsKey(client.Slot))
+                PlayerBuyList[client.Slot].PlayerBuyHistory.Clear();
 
-            PlayerBuyList[client.Slot].PlayerBuyHistory.Clear();
             return HookResult.Continue;
         }
 
@@ -144,26 +143,26 @@ namespace WeaponPurchaseCommand
 
             if (weaponConfig == null)
             {
-                client.PrintToChat( $"{ChatColors.Green}[Weapon]{ChatColors.Default} Invalid weapon!");
+                client.PrintToChat($" {ChatColors.Green}[Weapon]{ChatColors.Default} Invalid weapon!");
                 return;
             }
 
             if (!client.PawnIsAlive)
             {
-                client.PrintToChat( $"{ChatColors.Green}[Weapon]{ChatColors.Default} this feature need you to be alive!");
+                client.PrintToChat($" {ChatColors.Green}[Weapon]{ChatColors.Default} this feature need you to be alive!");
                 return;
             }
 
             if (weaponConfig.PurchaseRestrict)
             {
-                client.PrintToChat( $"{ChatColors.Green}[Weapon]{ChatColors.Default} Weapon {ChatColors.Lime}{weapon}{ChatColors.Default} is restricted");
+                client.PrintToChat($" {ChatColors.Green}[Weapon]{ChatColors.Default} Weapon {ChatColors.Lime}{weapon}{ChatColors.Default} is restricted");
                 return;
             }
 
             var cooldown = PurchaseConfig!.CooldownPurchase;
             if (cooldown > 0 && PlayerBuyList[client.Slot].IsCooldownNow)
             {
-                client.PrintToChat( $"{ChatColors.Green}[Weapon]{ChatColors.Default} Your purchase is on cooldown now!");
+                client.PrintToChat($" {ChatColors.Green}[Weapon]{ChatColors.Default} Your purchase is on cooldown now!");
                 return;
             }
 
@@ -171,7 +170,7 @@ namespace WeaponPurchaseCommand
 
             if (clientMoney < weaponConfig.PurchasePrice)
             {
-                client.PrintToChat( $"{ChatColors.Green}[Weapon]{ChatColors.Default} You don't have enough money to purchase this weapon!");
+                client.PrintToChat($" {ChatColors.Green}[Weapon]{ChatColors.Default} You don't have enough money to purchase this weapon!");
                 return;
             }
 
@@ -184,7 +183,7 @@ namespace WeaponPurchaseCommand
                 {
                     if (weaponPurchased >= weaponConfig.PurchaseLimit)
                     {
-                        client.PrintToChat( $"{ChatColors.Green}[Weapon]{ChatColors.Default} You have reached maximum purchase for {ChatColors.Lime}{weapon}{ChatColors.Default}, you can purchase again in next round");
+                        client.PrintToChat($" {ChatColors.Green}[Weapon]{ChatColors.Default} You have reached maximum purchase for {ChatColors.Lime}{weapon}{ChatColors.Default}, you can purchase again in next round");
                         return;
                     }
                     else
@@ -198,12 +197,12 @@ namespace WeaponPurchaseCommand
                     PlayerBuyList[client.Slot].PlayerBuyHistory.Add(weapon, 1);
                 }
 
-                client.PrintToChat( $"{ChatColors.Green}[Weapon]{ChatColors.Default} You have purchase {ChatColors.Lime}{weapon}{ChatColors.Default}, Purchase Limit: {ChatColors.Green}{weaponConfig.PurchaseLimit - weaponPurchased - 1}/{weaponConfig.PurchaseLimit}");
+                client.PrintToChat($" {ChatColors.Green}[Weapon]{ChatColors.Default} You have purchase {ChatColors.Lime}{weapon}{ChatColors.Default}, Purchase Limit: {ChatColors.Green}{weaponConfig.PurchaseLimit - weaponPurchased - 1}/{weaponConfig.PurchaseLimit}");
             }
 
             else
             {
-                client.PrintToChat( $"{ChatColors.Green}[Weapon]{ChatColors.Default} You have purchase {ChatColors.Lime}{weapon}{ChatColors.Default}.");
+                client.PrintToChat($" {ChatColors.Green}[Weapon]{ChatColors.Default} You have purchase {ChatColors.Lime}{weapon}{ChatColors.Default}.");
             }
 
             client.ExecuteClientCommand("slot3");
