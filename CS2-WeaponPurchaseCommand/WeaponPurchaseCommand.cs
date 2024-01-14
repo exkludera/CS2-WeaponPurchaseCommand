@@ -12,7 +12,7 @@ namespace WeaponPurchaseCommand
     public class WeaponPurchaseCommand : BasePlugin
     {
         public override string ModuleName => "CS2-Weapon Purchase Command";
-        public override string ModuleVersion => "1.1";
+        public override string ModuleVersion => "1.2";
         public override string ModuleAuthor => "Oylsister";
         public override string ModuleDescription => "Purchase weapon command for counter-strike 2";
 
@@ -214,7 +214,9 @@ namespace WeaponPurchaseCommand
                 client.DropActiveWeapon();
 
             client.GiveNamedItem(weaponConfig.WeaponEntity!);
-            client.InGameMoneyServices!.Account -= weaponConfig.PurchasePrice;
+
+            client.InGameMoneyServices.Account = clientMoney - weaponConfig.PurchasePrice;
+            Utilities.SetStateChanged(client, "CCSPlayerController", "m_pInGameMoneyServices");
 
             AddTimer(0.2f, () =>
             {
