@@ -23,7 +23,263 @@
             "WeaponSlot": 1,
             "PurchasePrice": 700,
             "PurchaseLimit": 0,
-            "PurchaseRestrict": true
+            "PurchaseRestrict": false
+        },
+        "P2000": {
+            "PurchaseCommand": [ "css_p2000", "css_hkp" ],
+            "WeaponEntity": "weapon_hkp2000",
+            "WeaponSlot": 1,
+            "PurchasePrice": 300,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+
+        "P250": {
+            "PurchaseCommand": [ "css_p250" ],
+            "WeaponEntity": "weapon_p250",
+            "WeaponSlot": 1,
+            "PurchasePrice": 400,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "Elite": {
+            "PurchaseCommand": [ "css_elite" ],
+            "WeaponEntity": "weapon_elite",
+            "WeaponSlot": 1,
+            "PurchasePrice": 500,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "Five-Seven": {
+            "PurchaseCommand": [ "css_fiveseven", "css_57", "css_fs" ],
+            "WeaponEntity": "weapon_fiveseven",
+            "WeaponSlot": 1,
+            "PurchasePrice": 800,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "R8-Revolver": {
+            "PurchaseCommand": [ "css_r8", "css_revolver" ],
+            "WeaponEntity": "weapon_revolver",
+            "WeaponSlot": 1,
+            "PurchasePrice": 850,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "CZ-75": {
+            "PurchaseCommand": [ "css_cz", "css_cs75" ],
+            "WeaponName": "CZ-75",
+            "WeaponEntity": "weapon_cz75a",
+            "WeaponSlot": 1,
+            "PurchasePrice": 600,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "Tec9": {
+            "PurchaseCommand": [ "css_tec9" ],
+            "WeaponEntity": "weapon_tec9",
+            "WeaponSlot": 1,
+            "PurchasePrice": 500,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "Nova": {
+            "PurchaseCommand": [ "css_nova" ],
+            "WeaponEntity": "weapon_nova",
+            "WeaponSlot": 0,
+            "PurchasePrice": 1200,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "XM1014": {
+            "PurchaseCommand": [ "css_xm", "css_xm1014" ],
+            "WeaponEntity": "weapon_xm1014",
+            "WeaponSlot": 0,
+            "PurchasePrice": 2000,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "Sawedoff": {
+            "PurchaseCommand": [ "css_sawedoff" ],
+            "WeaponEntity": "weapon_sawedoff",
+            "Knockback": 0.9,
+            "WeaponSlot": 0,
+            "PurchasePrice": 1500,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "MAG-7": {
+            "PurchaseCommand": [ "css_mag7" ],
+            "WeaponName": "MAG-7",
+            "WeaponEntity": "weapon_mag7",
+            "WeaponSlot": 0,
+            "PurchasePrice": 1500,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "Mac-10": {
+            "PurchaseCommand": [ "css_mac10", "css_mac" ],
+            "WeaponName": "Mac-10",
+            "WeaponEntity": "weapon_mac10",
+            "WeaponSlot": 0,
+            "PurchasePrice": 1100,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "MP9": {
+            "PurchaseCommand": [ "css_mp9" ],
+            "WeaponEntity": "weapon_mp9",
+            "WeaponSlot": 0,
+            "PurchasePrice": 1300,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "MP5-SD": {
+            "PurchaseCommand": [ "css_mp5", "css_mp5sd" ],
+            "WeaponName": "MP5-SD",
+            "WeaponEntity": "weapon_mp5sd",
+            "WeaponSlot": 0,
+            "PurchasePrice": 1250,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "MP7": {
+            "PurchaseCommand": [ "css_mp7" ],
+            "WeaponName": "MP7",
+            "WeaponEntity": "weapon_mp7",
+            "WeaponSlot": 0,
+            "PurchasePrice": 1400,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "UMP-45": {
+            "PurchaseCommand": [ "css_ump", "css_ump45" ],
+            "WeaponEntity": "weapon_ump45",
+            "WeaponSlot": 0,
+            "PurchasePrice": 1900,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "PP-Bizon": {
+            "PurchaseCommand": [ "css_bizon", "css_pp" ],
+            "WeaponEntity": "weapon_bizon",
+            "WeaponSlot": 0,
+            "PurchasePrice": 1600,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "P90": {
+            "PurchaseCommand": [ "css_p90" ],
+            "WeaponEntity": "weapon_p90",
+            "WeaponSlot": 0,
+            "PurchasePrice": 2350,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "Galil AR": {
+            "PurchaseCommand": [ "css_galil" ],
+            "WeaponEntity": "weapon_galilar",
+            "WeaponSlot": 0,
+            "PurchasePrice": 2300,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "Famas": {
+            "PurchaseCommand": [ "css_famas" ],
+            "WeaponEntity": "weapon_famas",
+            "WeaponSlot": 0,
+            "PurchasePrice": 2250,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "AK47": {
+            "PurchaseCommand": [ "css_ak", "css_ak47" ],
+            "WeaponEntity": "weapon_ak47",
+            "WeaponSlot": 0,
+            "PurchasePrice": 2700,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "M4A4": {
+            "PurchaseCommand": [ "css_m4a4", "css_m4" ],
+            "WeaponEntity": "weapon_m4a1",
+            "WeaponSlot": 0,
+            "PurchasePrice": 3300,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "M4A1-S": {
+            "PurchaseCommand": [ "css_m4a1", "css_m4s", "css_m4a1s" ],
+            "WeaponEntity": "weapon_m4a1_silencer",
+            "WeaponSlot": 0,
+            "PurchasePrice": 3100,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "SG556": {
+            "PurchaseCommand": [ "css_sg556" ],
+            "WeaponEntity": "weapon_sg556",
+            "WeaponSlot": 0,
+            "PurchasePrice": 3300,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "AUG": {
+            "PurchaseCommand": [ "css_aug" ],
+            "WeaponEntity": "weapon_aug",
+            "WeaponSlot": 0,
+            "PurchasePrice": 3300,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "SSG08": {
+            "PurchaseCommand": [ "css_scout", "css_ssg08" ],
+            "WeaponEntity": "weapon_ssg08",
+            "WeaponSlot": 0,
+            "PurchasePrice": 1700,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "AWP": {
+            "PurchaseCommand": [ "css_awp" ],
+            "WeaponEntity": "weapon_awp",
+            "WeaponSlot": 0,
+            "PurchasePrice": 4750,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "Scar-20": {
+            "PurchaseCommand": [ "css_scar", "css_scar20" ],
+            "WeaponEntity": "weapon_scar20",
+            "Knockback": 1.1,
+            "WeaponSlot": 0,
+            "PurchasePrice": 5000,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "G3SG1": {
+            "PurchaseCommand": [ "css_g3sg1" ],
+            "WeaponEntity": "weapon_g3sg1",
+            "WeaponSlot": 0,
+            "PurchasePrice": 5000,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "M249": {
+            "PurchaseCommand": [ "css_m249" ],
+            "WeaponEntity": "weapon_m249",
+            "WeaponSlot": 0,
+            "PurchasePrice": 5000,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
+        },
+        "Negev": {
+            "PurchaseCommand": [ "css_negev" ],
+            "WeaponEntity": "weapon_negev",
+            "WeaponSlot": 0,
+            "PurchasePrice": 1500,
+            "PurchaseLimit": 0,
+            "PurchaseRestrict": false
         }
     }
 }
