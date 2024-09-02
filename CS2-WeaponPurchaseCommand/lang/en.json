@@ -1,0 +1,10 @@
+{
+  "Invalid Weapon": "{default}Invalid weapon!",
+  "Not Alive": "{default}this feature need you to be alive!",
+  "Weapon Restricted": "{lime}{0}{default} is restricted",
+  "Purchase Cooldown": "{default}Your purchase is on cooldown now!",
+  "Not Enough Money": "{default}You don't have enough money to purchase this weapon!",
+  "Maximum Purchase": "{default}You have reached maximum purchase for {lime}{0}{default}, you can purchase again in next round",
+  "Purchase Limit": "{default}You have purchase {lime}{0}{default}, Purchase Limit: {green}{1}/{2}",
+  "Purchased": "{default}You have purchase {lime}{0}"
+}
